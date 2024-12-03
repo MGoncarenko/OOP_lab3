@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="oopLab3.EditPersonPage"
+             Title="Редагувати">
+    <StackLayout Padding="10">
+        <Label Text="ID" FontSize="16" />
+        <Label Text="{Binding Id}" FontSize="16" />
+        <Label Text="Ім'я" FontSize="16" />
+        <Entry Text="{Binding Name, Mode=TwoWay}" Placeholder="Ім'я" />
+        <Label Text="Вік" FontSize="16" />
+        <Entry Text="{Binding Age, Mode=TwoWay}" Placeholder="Вік" Keyboard="Numeric" />
+        <Label Text="Факультет" FontSize="16" />
+        <Entry Text="{Binding Faculty, Mode=TwoWay}" Placeholder="Факультет" />
+        <Button Text="Зберегти зміни" Clicked="SaveChanges" />
+    </StackLayout>
+</ContentPage>
